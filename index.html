@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>A-Frame particle system component</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+        <a-scene id="scene">
+            <a-entity position="1 1 1" spe-particles="color:red,orange,black,pink;
+            distrubution:sphere;
+            size:10,10,10,10;
+            particle-count:100;
+            radius:5;
+            drag:1;
+            randomize-velocity:true;
+            velocity:1;
+            velocity-spread:15;
+            max:age:2;
+            blending:additive;
+            active-multiplier:1000;
+            duration:-1;
+            "></a-entity>
+            <a-sky color="black"></a-sky>
+            <a-camera position="0 0 20"></a-camera>
+        </a-scene>
+    </body>
+</html>
